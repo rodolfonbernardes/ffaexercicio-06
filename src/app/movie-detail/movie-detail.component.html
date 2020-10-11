@@ -1,0 +1,8 @@
+<p *ngIf="isLoadingMovie">Carregando...</p>
+
+<article *ngIf="!isLoadingMovie">
+  <h1>{{movie.title}}</h1>
+  <img width="184" height="273" [src]="buildImagePath(movie.poster_path)">
+  <p>{{movie.overview}}</p>
+  <p>Numero de votos: <strong>{{movie.vote_count}}</strong></p>
+</article>

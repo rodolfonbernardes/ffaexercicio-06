@@ -1,0 +1,10 @@
+<article>
+  <h1>Movies App</h1>
+  <router-outlet></router-outlet>
+  <input type="text" placeholder="Search" #search (keyup)="0">
+  <select (change)="order = $event.target.value">
+    <option value="titulo">Ordenar por titulo</option>
+    <option value="votos">Ordenar por numero de votos</option>
+  </select>
+  <app-movie-list [filter]="search.value" [order]="order"></app-movie-list>
+</article>

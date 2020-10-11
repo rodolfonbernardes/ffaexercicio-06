@@ -1,0 +1,4 @@
+<article [routerLink]="['movie/', movie.id]">
+  <img width="184" height="273" [src]="buildImagePath(movie.poster_path)">
+  <h1>{{movie.title}}</h1>
+</article>

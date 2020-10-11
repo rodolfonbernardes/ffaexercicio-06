@@ -1,0 +1,8 @@
+h1 {
+  text-align: center;
+}
+
+input, select {
+  margin: 19px auto;
+  display: block;
+}
